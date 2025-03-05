@@ -92,7 +92,7 @@ export default function Login() {
       </form>
       
       <p style={{ marginTop: '1.5rem', textAlign: 'center' }}>
-        Don't have an account?{' '}
+        Don&apos;t have an account?{' '}
         <Link href="/signup" style={{ color: '#3b82f6' }}>
           Sign up
         </Link>

@@ -37,7 +37,7 @@ export default function Home() {
             marginBottom: '2.5rem',
             lineHeight: 1.6
           }}>
-            Automate your gaming tasks with AI-powered assistance. Select your game, tell our AI what to do, and we'll handle the rest.
+            Automate your gaming tasks with AI-powered assistance. Select your game, tell our AI what to do, and we&apos;ll handle the rest.
           </p>
           
           <div style={{
