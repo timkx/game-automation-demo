@@ -46,7 +46,7 @@ Would you like to confirm this plan?`, options: ['Confirm and start automation',
   const [isProcessing, setIsProcessing] = useState(false);
 
   // Function to handle sending a message
-  const handleSendMessage = (e) => {
+  const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!messageInput.trim() || isProcessing) return;
@@ -101,7 +101,7 @@ Everything is running smoothly!`
     }, 1000);
   };
 
-  const handleOptionClick = (option) => {
+  const handleOptionClick = (option: string) => {
     // Add selected option as user message
     const userMessage = { id: Date.now(), role: 'user', content: option };
     setMessages(prev => [...prev, userMessage]);
