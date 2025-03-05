@@ -1,9 +1,9 @@
-// src/app/dashboard/chat/page.tsx
 'use client';
-import { useState } from 'react';
+import { useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export default function ChatInterface() {
+// Inner component that uses useSearchParams
+function ChatContent() {
   const searchParams = useSearchParams();
   const gameId = searchParams.get('game') || 'unknown';
   
@@ -308,5 +308,14 @@ Is there anything else you'd like me to help you with?`
         </form>
       </div>
     </div>
+  );
+}
+
+// Main component with Suspense boundary
+export default function ChatInterface() {
+  return (
+    <Suspense fallback={<div>Loading chat interface...</div>}>
+      <ChatContent />
+    </Suspense>
   );
 }
