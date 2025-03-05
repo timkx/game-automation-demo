@@ -7,7 +7,7 @@ export default function DashboardLayout({
     container: {
       minHeight: '100vh',
       display: 'flex',
-      flexDirection: 'column' as 'column',
+      flexDirection: 'column' as const,
     },
     header: {
       padding: '16px 24px',

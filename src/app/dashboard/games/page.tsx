@@ -1,4 +1,3 @@
-// src/app/dashboard/games/page.tsx
 import Link from 'next/link';
 
 export default function GameSelection() {
@@ -36,7 +35,7 @@ export default function GameSelection() {
     },
     gamesList: {
       display: 'flex',
-      flexDirection: 'column' as 'column',
+      flexDirection: 'column' as const,
       gap: '12px'
     },
     gameCard: {
